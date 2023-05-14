@@ -12,6 +12,7 @@
 /*BACKGROUND-COLOR*/
 
 --black-bgc: #000000;
+--accent-bgc: #4CAF50;
 }
 
 
@@ -92,7 +93,7 @@ body {
   }
 
 .header{
-background-color: var(--black-bgc);}
+    background-color: var(--black-bgc);}
 
   .menu-nav{
     display: flex;
@@ -106,17 +107,31 @@ background-color: var(--black-bgc);}
     align-items: flex-end;
     padding-top: 79px;
     padding-bottom: 79px;
-
-    
+    gap: 58.30px;
 }
 
-.works,
-.about,
-.services,
-.blog,
-.contact {
- 
 
+.nav-link:nth-child(4) {
+    margin-right: 64.3px;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+  }
+
+  .nav-link::after{
+display: flex;
+
+content: "";
+width: 17.97px;
+height: 2px;
+left: 47.92px;
+top: 19px;
+background-color: var(--accent-bgc);
+}
+
+
+.nav-link{
     color: var(--white-txt-cl);
     font-size: 14px;
     line-height: 1.5;
